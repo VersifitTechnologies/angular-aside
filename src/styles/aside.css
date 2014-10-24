@@ -103,7 +103,7 @@ vertical aside
   border-radius: 0;
 }
 
-.ng-aside.vertical .modal-dialog.modal-md {
+.ng-aside.vertical .modal-dialog.modal-sm {
   height: 400px;
 }
 
