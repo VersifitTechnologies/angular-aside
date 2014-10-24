@@ -2,7 +2,7 @@
 /*!
  * angular-aside - v1.0.0
  * https://github.com/dbtek/angular-aside
- * 2014-10-22
+ * 2014-10-24
  * Copyright (c) 2014 İsmail Demirbilek
  * License: MIT
  */

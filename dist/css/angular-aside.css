@@ -1,7 +1,7 @@
 /*!
  * angular-aside - v1.0.0
  * https://github.com/dbtek/angular-aside
- * 2014-10-22
+ * 2014-10-24
  * Copyright (c) 2014 İsmail Demirbilek
  * License: MIT
  */
@@ -257,7 +257,7 @@ vertical aside
   border-radius: 0;
 }
 
-.ng-aside.vertical .modal-dialog.modal-md {
+.ng-aside.vertical .modal-dialog.modal-sm {
   height: 400px;
 }
 
