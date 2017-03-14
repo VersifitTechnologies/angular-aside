@@ -2,8 +2,8 @@
 /*!
  * angular-aside - v1.0.0
  * https://github.com/dbtek/angular-aside
- * 2014-10-24
- * Copyright (c) 2014 İsmail Demirbilek
+ * 2017-03-14
+ * Copyright (c) 2017 İsmail Demirbilek
  * License: MIT
  */
 
@@ -17,7 +17,7 @@ angular.module('ngAside')
    * @function
    * @author İsmail Demirbilek
    */
-  .factory('$aside', function($modal) {
+  .factory('$aside', function($uibModal) {
     var defaults = this.defaults = {
       placement: 'left'
     };
@@ -33,11 +33,11 @@ angular.module('ngAside')
         var vertHoriz = ['left', 'right'].indexOf(options.placement) === -1 ? 'vertical' : 'horizontal';
         // set aside classes
         options.windowClass  = 'ng-aside ' + vertHoriz + ' ' + options.placement + (options.windowClass ? ' ' + options.windowClass : '');
-        return $modal.open(options);
+        return $uibModal.open(options);
       }
     };
 
-    // create $aside as extended $modal
-    var $aside = angular.extend({}, $modal, asideFactory);
+    // create $aside as extended $uibModal
+    var $aside = angular.extend({}, $uibModal, asideFactory);
     return $aside;
   });
